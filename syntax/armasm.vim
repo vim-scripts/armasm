@@ -1,9 +1,9 @@
 " Vim syntax file
 " Language:     ARM Assembler
 " Maintainer:   Gerald S. Williams <gsw@agere.com>
-" Last Change:  2004 Jan 26
+" Last Change:  2004 Apr 14
 " URL:          http://www.vim.org
-" Revision:     1.0
+" Revision:     1.1
 "
 " based on PIC16F84 Assembler syntax file (pic.vim) by Aleksandar Veselinovic
 
@@ -25,10 +25,10 @@ syn case ignore
 
 syn match armasmIdentifier	"[a-z_$][a-z0-9_$]*"
 syn match armasmLabel		"^[A-Z_$][A-Z0-9_$]*"
-syn region armasmLabel		start="||" end="||"
-syn region armasmLabel		start="|" end="|"
+syn region armasmLabel		start="||" end="||" oneline
+syn region armasmLabel		start="|" end="|" oneline
 
-syn region armasmASCII		start="'" end="'" skip="\\'"
+syn region armasmASCII		start="'" end="'" skip="\\'" oneline
 syn match armasmDecimal		"\d\+"
 syn match armasmHexadecimal	"0[xX]\x\+"
 syn match armasmHexadecimal	"&\x\+"
@@ -68,7 +68,7 @@ syn match armasmBuiltIn		"{NOSWST}"
 
 syn match armasmComment		";.*" contains=armasmTodo
 
-syn region armasmString		start=+"+ end=+"+
+syn region armasmString		start=+"+ end=+"+ oneline
 
 syn match armasmOperator	":BASE:"
 syn match armasmOperator	":INDEX:"
