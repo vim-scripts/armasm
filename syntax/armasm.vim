@@ -1,9 +1,9 @@
 " Vim syntax file
 " Language:     ARM Assembler
 " Maintainer:   Gerald S. Williams <gsw@agere.com>
-" Last Change:  2004 Apr 14
+" Last Change:  2005 Mar 16
 " URL:          http://www.vim.org
-" Revision:     1.1
+" Revision:     1.2
 "
 " based on PIC16F84 Assembler syntax file (pic.vim) by Aleksandar Veselinovic
 
